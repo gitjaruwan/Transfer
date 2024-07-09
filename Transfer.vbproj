@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E361A7C-6885-4949-8BB7-3EB20AF76D19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Transfer.My.MyApplication</StartupObject>
+    <RootNamespace>Transfer</RootNamespace>
+    <AssemblyName>Transfer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ManifestCertificateThumbprint>6EC847F9C2610FEFDE9DB44D7289A46BDFD0A185</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Transfer_3_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\27.254.123.234\hrokf\TransFerPub\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>TransferStaff.htm</WebPage>
+    <ApplicationRevision>89</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Transfer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Transfer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A1_1.designer.vb">
+      <DependentUpon>Prt_Trn_A1_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A1_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLock.designer.vb">
+      <DependentUpon>FrmLock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_4_2.vb">
+      <DependentUpon>Prt_Trn_A_4_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Prt_Trn_A6.designer.vb">
+      <DependentUpon>Prt_Trn_A6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_6.vb">
+      <DependentUpon>Prt_Trn_A_6.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmUpdStaf1.designer.vb">
+      <DependentUpon>FrmUpdStaf1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdStaf1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A5_1.designer.vb">
+      <DependentUpon>Prt_Trn_A5_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A5_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A4_1.designer.vb">
+      <DependentUpon>Prt_Trn_A4_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A4_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A3_1.designer.vb">
+      <DependentUpon>Prt_Trn_A3_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A3_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_3_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prt_Trn_A_3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_4_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prt_Trn_A_4_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transfer.designer.vb">
+      <DependentUpon>Transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComfirm.designer.vb">
+      <DependentUpon>FrmComfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDep.designer.vb">
+      <DependentUpon>FrmDep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogFiles.designer.vb">
+      <DependentUpon>FrmLogFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShift.designer.vb">
+      <DependentUpon>FrmShift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaff.designer.vb">
+      <DependentUpon>FrmStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransFer.designer.vb">
+      <DependentUpon>FrmTransFer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransFer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrtDep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtDep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtShift.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtShift.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtStaff.vb">
+      <DependentUpon>PrtStaff.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmDiv.designer.vb">
+      <DependentUpon>FrmDiv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDiv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmField.designer.vb">
+      <DependentUpon>FrmField.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmField.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHead.designer.vb">
+      <DependentUpon>FrmHead.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPos.designer.vb">
+      <DependentUpon>FrmPos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSup.designer.vb">
+      <DependentUpon>FrmSup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmType.designer.vb">
+      <DependentUpon>FrmType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnit.designer.vb">
+      <DependentUpon>FrmUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A2.designer.vb">
+      <DependentUpon>Prt_Trn_A2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A3.designer.vb">
+      <DependentUpon>Prt_Trn_A3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A4.designer.vb">
+      <DependentUpon>Prt_Trn_A4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A5.designer.vb">
+      <DependentUpon>Prt_Trn_A5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_1.vb">
+      <DependentUpon>Prt_Trn_A_1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PrtTransfer.vb">
+      <DependentUpon>PrtTransfer.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtHead.vb">
+      <DependentUpon>PrtHead.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmLogin.designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.designer.vb">
+      <DependentUpon>FrmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrtDiv.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtDiv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtField.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtField.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtPos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtPos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtSup.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtSup.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtType.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtType.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrtUnit.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrtUnit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A1.designer.vb">
+      <DependentUpon>Prt_Trn_A1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prt_Trn_A1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prt_Trn_A_3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prt_Trn_A_4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prt_Trn_A_5.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prt_Trn_A_5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A1_1.resx">
+      <DependentUpon>Prt_Trn_A1_1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLock.resx">
+      <DependentUpon>FrmLock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_4_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_4_2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A6.resx">
+      <DependentUpon>Prt_Trn_A6.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_6.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdStaf1.resx">
+      <DependentUpon>FrmUpdStaf1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A5_1.resx">
+      <DependentUpon>Prt_Trn_A5_1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A4_1.resx">
+      <DependentUpon>Prt_Trn_A4_1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A3_1.resx">
+      <DependentUpon>Prt_Trn_A3_1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_3_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_4_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_4_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer.resx">
+      <DependentUpon>Transfer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComfirm.resx">
+      <DependentUpon>FrmComfirm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDep.resx">
+      <DependentUpon>FrmDep.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogFiles.resx">
+      <DependentUpon>FrmLogFiles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShift.resx">
+      <DependentUpon>FrmShift.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaff.resx">
+      <DependentUpon>FrmStaff.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransFer.resx">
+      <DependentUpon>FrmTransFer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtDep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtDep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtShift.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtShift.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtStaff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtStaff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDiv.resx">
+      <DependentUpon>FrmDiv.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmField.resx">
+      <DependentUpon>FrmField.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHead.resx">
+      <DependentUpon>FrmHead.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPos.resx">
+      <DependentUpon>FrmPos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSup.resx">
+      <DependentUpon>FrmSup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmType.resx">
+      <DependentUpon>FrmType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnit.resx">
+      <DependentUpon>FrmUnit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A2.resx">
+      <DependentUpon>Prt_Trn_A2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A3.resx">
+      <DependentUpon>Prt_Trn_A3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A4.resx">
+      <DependentUpon>Prt_Trn_A4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A5.resx">
+      <DependentUpon>Prt_Trn_A5.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtTransfer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtTransfer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtHead.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtHead.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtDiv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtDiv.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtField.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtField.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtPos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtPos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtSup.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtSup.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtType.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtType.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrtUnit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrtUnit.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A1.resx">
+      <DependentUpon>Prt_Trn_A1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prt_Trn_A_5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prt_Trn_A_5.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Clock_132299.jpg" />
+    <None Include="Resources\if_Search_132289.jpg" />
+    <None Include="Resources\if_Left_132177.jpg" />
+    <None Include="Resources\ic_cached_black_24dp.png" />
+    <None Include="Resources\excel.jpg" />
+    <None Include="Resources\printer11.BMP" />
+    <None Include="Resources\Save Blue 32 h g2.gif" />
+    <None Include="Resources\bill_of_document3.png" />
+    <None Include="Resources\bill_of_document2.png" />
+    <None Include="Resources\bill_of_document1.png" />
+    <None Include="Resources\door31.BMP" />
+    <None Include="Resources\erase1.png" />
+    <None Include="Resources\deletered1.png" />
+    <None Include="Resources\Save Blue 32 h g1.gif" />
+    <None Include="Transfer_1_TemporaryKey.pfx" />
+    <None Include="Transfer_2_TemporaryKey.pfx" />
+    <None Include="Transfer_3_TemporaryKey.pfx" />
+    <None Include="Transfer_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic for Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

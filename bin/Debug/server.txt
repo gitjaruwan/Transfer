@@ -1,0 +1,13 @@
+210.1.56.25
+pakfood3
+sa
+p@kf00d!
+Transfer
+OKF
+บริษัท โอคินอสฟู้ด จำกัด
+85 หมู่4 ตำบลนาดี อำเภอเมือง จงหวัดสมุทรสาคร 74000
+\\210.1.56.25\hrokf\TimeFle\
+\\210.1.56.25\hrokf\TimeFle\TrTime\
+\\192.168.103.220\TimeFle\
+Data Source=PAKFOOD3;Initial Catalog=RawmatOk;User ID=kamol;Password=yeahno
+
